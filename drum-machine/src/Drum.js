@@ -10,48 +10,10 @@ function Drum( { audioClipObj } ) {
 
     return (
     <button className='drum-pad' id={'drum-' + audioClipObj.keyTrigger} text={audioClipObj.keyTrigger} onClick={() => playSound(audioClipObj)}>
-        <audio id={audioClipObj.keyTrigger} src={audioClipObj.url}/>
+        <audio className='clip' id={audioClipObj.keyTrigger} src={audioClipObj.url}/>
         {audioClipObj.keyTrigger}
     </button>
     )
 }
 
 export default Drum;
-
-/*
-<div className='container drum-pad-grid-container'>
-        <div className='row btn-row'>
-            <div className='col-4'>
-                <button className='btn btn-primary btn-block'>#</button>
-            </div>
-            <div className='col-4'>
-                <button className='btn btn-primary btn-block'>#</button>
-            </div>
-            <div className='col-4'>
-                <button className='btn btn-primary btn-block'>#</button>
-            </div>
-        </div>
-        <div className='row btn-row'>
-            <div className='col-4'>
-                <button className='btn btn-primary btn-block'>#</button>
-            </div>
-            <div className='col-4'>
-                <button className='btn btn-primary btn-block'>#</button>
-            </div>
-            <div className='col-4'>
-                <button className='btn btn-primary btn-block'>#</button>
-            </div>
-        </div>
-        <div className='row btn-row'>
-            <div className='col-4'>
-                <button className='btn btn-primary btn-block'>#</button>
-            </div>
-            <div className='col-4'>
-                <button className='btn btn-primary btn-block'>#</button>
-            </div>
-            <div className='col-4'>
-                <button className='btn btn-primary btn-block'>#</button>
-            </div>
-        </div>
-    </div>
-*/
