@@ -67,10 +67,11 @@ function App() {
   return (
     <div className='container' id='drum-machine' onKeyDown={playSoundByKey}>
       <h1>Play the drum machine!</h1>
+      <h3><em>Tap, or use keyboard</em></h3>
       <div className='drum-grid'>
         {audioClips.map( (clipObj) => (<Drum audioClipObj={clipObj} key={clipObj.keyTrigger}/>))}
       </div>
-      <h6 id='display'></h6>
+      <h2 id='display'></h2>
     </div>
   );
 }
